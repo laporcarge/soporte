@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto Oficial | Soporte</title>
+  <meta name="description" content="Página oficial de contacto. Si el número principal no responde, usá el alternativo o volvé más tarde." />
+
+  <style>
+    :root {
+      --bg: #0f1221;
+      --card: #1a1f3a;
+      --text: #e9ecff;
+      --accent: #25D366;
+      --accent2: #128C7E;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: radial-gradient(circle at 30% 20%, #1a1f3a 0%, #0f1221 70%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(24px, 5vw, 36px);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #b2b7da;
+      margin-bottom: 25px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 25px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      margin: 10px 0;
+      border-radius: 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: transform 0.1s ease, opacity 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #0d1810;
+    }
+
+    .btn.secondary {
+      background: var(--accent2);
+      color: #e9ecff;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #7f89b7;
+    }
+
+    .footer a {
+      color: #9ba4d0;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>💬 Contacto Oficial</h1>
+    <p>Si el número principal no responde, usá el alternativo o volvé a intentar más tarde.</p>
+
+    <!-- 👉 Tu número principal -->
+    <a class="btn primary" href="https://wa.me/5493513791096" target="_blank">
+      WhatsApp Principal (+54 9 351 379-1096)
+    </a>
+
+    <!-- 👉 Número alternativo opcional -->
+    <a class="btn secondary" href="https://wa.me/5493510000000" target="_blank">
+      WhatsApp Alternativo (ejemplo)
+    </a>
+
+    <p style="margin-top:20px;">Guardá este enlace para contactarnos en el futuro:</p>
+    <code style="background:rgba(255,255,255,0.08);padding:8px 12px;border-radius:8px;display:inline-block;">
+      soporteclubdigital.link
+    </code>
+
+    <div class="footer">
+      <p>© 2025 Club Digital · Centro de soporte<br>
+      <a href="#">Política de privacidad</a></p>
+    </div>
+  </div>
+</body>
+</html>
