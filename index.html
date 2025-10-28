@@ -12,12 +12,9 @@
       --card: #1a1f3a;
       --text: #e9ecff;
       --accent: #25D366;
-      --accent2: #128C7E;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -61,7 +58,8 @@
       padding: 14px 20px;
       margin: 10px 0;
       border-radius: 12px;
-      color: white;
+      background: var(--accent);
+      color: #0d1810;
       text-decoration: none;
       font-weight: 600;
       font-size: 16px;
@@ -71,16 +69,6 @@
     .btn:hover {
       transform: translateY(-2px);
       opacity: 0.9;
-    }
-
-    .btn.primary {
-      background: var(--accent);
-      color: #0d1810;
-    }
-
-    .btn.secondary {
-      background: var(--accent2);
-      color: #e9ecff;
     }
 
     .footer {
@@ -103,16 +91,11 @@
 <body>
   <div class="card">
     <h1>💬 Contacto Oficial</h1>
-    <p>Si el número principal no responde, usá el alternativo o volvé a intentar más tarde.</p>
+    <p>Si el número no responde, volvé a intentar más tarde.</p>
 
-    <!-- 👉 Tu número principal -->
-    <a class="btn primary" href="https://wa.me/5493513791096" target="_blank">
-      WhatsApp Principal (+54 9 351 379-1096)
-    </a>
-
-    <!-- 👉 Número alternativo opcional -->
-    <a class="btn secondary" href="https://wa.me/5493510000000" target="_blank">
-      WhatsApp Alternativo (ejemplo)
+    <!-- 👉 Único botón con tu número -->
+    <a class="btn" href="https://wa.me/5493513791096" target="_blank">
+      Contactar por WhatsApp (+54 9 351 379-1096)
     </a>
 
     <p style="margin-top:20px;">Guardá este enlace para contactarnos en el futuro:</p>
